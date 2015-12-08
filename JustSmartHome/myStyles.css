@@ -1,0 +1,230 @@
+﻿.sendsubmit {
+    outline: none;
+    width:  200px;  
+    height: 50px; 
+    text-indent: -1000em;
+    cursor: pointer; 
+    border-radius:5px;
+}
+.sendsubmit:hover {
+    border: 1px solid #333; 
+    border-color: red;
+}
+
+.myBackground{
+    background: url(../Images/bg.bmp) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.image {
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    height: 151px;
+    width: 250px; 
+    background: url(../Images/alarm.png) no-repeat 0;
+    background-color: white;
+}
+
+.lamp{
+    width: 120px;
+    height: 150px;
+}
+.forText{
+    text-align: justify; 
+    text-indent: 102px;
+}
+
+.bggreen{
+    outline: none;
+    background-color: green;
+}
+.bgblack{
+    outline: none;
+    background-color: black;
+}
+.forText:hover:after{
+    content: "Введите пароль: от 3-х до 10-ти символов";
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}
+
+.forButtons{
+    float: right;
+    right: 0;
+}
+
+.OnOff{
+    float: left;
+    left: 0;
+    bottom: 0;
+    outline: none;
+    border-radius: 15px;
+}
+.bottom{
+    outline: none;
+    border-radius: 15px;
+}
+.delete{
+    outline: none;
+    float: right;
+    left: 0; 
+    bottom: 0; 
+    width: 27px;
+    height: 33px;
+    background: url(../Images/delete.png);
+    border-radius: 8px;
+}
+.delete:hover{
+    background: url(../Images/delete_focus.png);
+}
+
+.save{
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.empty{
+    background-color:white;
+    border: 1px solid black;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    /*position: absolute;*/
+}
+
+.vol{
+    float: left;
+    outline: none;
+    border-radius: 15px;
+}
+
+.infoAlarm{
+    float: left;
+    left: 25px;
+    bottom: 25px;
+}
+
+.forConditioner {
+    float: left;
+    right: 0; 
+    bottom: 0; 
+    outline: none;
+}
+
+.conditioner{
+    background-color:white;
+    border: 1px solid black;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    height: 151px;
+    width: 250px; 
+}
+
+.conditionerImage{
+    width: 215px;
+    height: 79px;
+}
+
+.microwaveMain{
+    border: 1px solid black;
+    text-align: right;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    width: 214px; 
+    height: 200px;
+    background: url(../Images/microwave.png) no-repeat 0;
+    background-color:white;
+    background-position: top;
+}
+
+.microwaveButtons{
+    width: 40px;
+    height: auto;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.microwaveStart{
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:red;
+}
+
+.label{
+    margin-top: 50px;
+    margin-right:5px;
+    color:white;
+}
+
+.save:hover:after{
+    content: "Введите пароль: от 3-х до 10-ти символов";
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}
+
+.infoMicrowave:hover:after{
+    content: "Нажмите для начала работы микроволновой печи";
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}
+
+.infoTV:hover:after{
+    content: "Предыдущий/следующий канал";
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}
+
+.infoTVVolume:hover:after{
+    content: "Уменьшить/увеличить звук";
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}

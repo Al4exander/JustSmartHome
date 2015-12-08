@@ -1,0 +1,81 @@
+#navbar {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	margin: 0 0 0 -265px;
+	padding: 0;
+	background: url(../img/nav-bg.gif) no-repeat 0 0;
+	width: 536px;
+	height: 93px;
+}
+#navbar li {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 50px;
+	list-style: none;
+	float: left;
+	height: 29px;
+}
+#navbar li a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font: 15px/29px "Arial Narrow";
+	text-decoration: none;
+	white-space: nowrap;
+	color: #666666;
+	height: 29px;
+	overflow: none;
+}
+#navbar li a:hover {
+	color: #ff6600;
+}
+#navbar li a span {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	float: left;
+	top: 0;
+	left: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 29px;
+}
+#navbar li a:hover span {
+	background-position: 0 -29px;
+}
+#navbar li.active a span {
+	background-position: 0 -29px;
+}
+#navbar li.about, #navbar li.about a , #navbar li.about a span {
+	width: 110px;
+}
+#navbar li.about a span {
+	background-image: url(../img/n1.gif);
+}
+#navbar li.facility, #navbar li.facility a , #navbar li.facility a span {
+	width: 101px;
+}
+#navbar li.facility a span {
+	background-image: url(../img/n2.gif);
+}
+#navbar li.portfolio, #navbar li.portfolio a , #navbar li.portfolio a span {
+	width: 108px;
+}
+#navbar li.portfolio a span {
+	background-image: url(../img/n3.gif);
+}
+#navbar li.vacancy, #navbar li.vacancy a , #navbar li.vacancy a span {
+	width: 103px;
+}
+#navbar li.vacancy a span {
+	background-image: url(../img/n4.gif);
+}
+#navbar li.faq, #navbar li.faq a , #navbar li.faq a span {
+	width: 114px;
+}
+#navbar li.faq a span {
+	background-image: url(../img/n5.gif);
+}
