@@ -51,34 +51,61 @@ namespace JustSmartHome
         {
             foreach (int key in devicesDictionary.Keys)
             {
-                panelForDevices.Controls.Add(new DeviceControl(key, devicesDictionary));
+                if(devicesDictionary[key] is Lamp)
+                {
+                    panelForDevices.Controls.Add(new LampControl(key, devicesDictionary));
+                }
+                else if (devicesDictionary[key] is AlarmSystem)
+                {
+                    panelForDevices.Controls.Add(new AlarmControl(key, devicesDictionary));
+                }
+                else if (devicesDictionary[key] is TVSet)
+                {
+                    panelForDevices.Controls.Add(new TVSetControl(key, devicesDictionary));
+                }
+                else if (devicesDictionary[key] is Microwave)
+                {
+                    panelForDevices.Controls.Add(new MicrowaveControl(key, devicesDictionary));
+                }
+                else if(devicesDictionary[key] is Conditioner)
+                {
+                    panelForDevices.Controls.Add(new ConditionerControl(key, devicesDictionary));
+                }
             }
         }
 
         protected void AddDeviceButtonClick(object sender, EventArgs e)
         {
             Device newDevice;
+            int id = (int)Session["NextId"];
             switch(((ImageButton)sender).ID)
             {
                 default:
                     newDevice = new Lamp(false,  Brightness.low);
+                    devicesDictionary.Add(id, newDevice); 
+                    panelForDevices.Controls.Add(new LampControl(id, devicesDictionary));
                     break;
                 case "AddTV":
                     newDevice = new TVSet(false,  1, 1);
+                    devicesDictionary.Add(id, newDevice); 
+                    panelForDevices.Controls.Add(new TVSetControl(id, devicesDictionary));
                     break;
                 case "AddAlarm":
                     newDevice = new AlarmSystem(false, "0000");
+                    devicesDictionary.Add(id, newDevice); 
+                    panelForDevices.Controls.Add(new AlarmControl(id, devicesDictionary));
                     break;
                 case "AddConditioner":
                     newDevice = new Conditioner(false, 15);
+                    devicesDictionary.Add(id, newDevice); 
+                    panelForDevices.Controls.Add(new ConditionerControl(id, devicesDictionary));
                     break;
                 case "AddMicrovawe":
                     newDevice = new Microwave(false, 0, Mode.standart);
+                    devicesDictionary.Add(id, newDevice); 
+                    panelForDevices.Controls.Add(new MicrowaveControl(id, devicesDictionary));
                     break;
             }
-            int id = (int)Session["NextId"];
-            devicesDictionary.Add(id, newDevice); 
-            panelForDevices.Controls.Add(new DeviceControl(id, devicesDictionary));
             id++;
             Session["NextId"] = id;
         }

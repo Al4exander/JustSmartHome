@@ -123,8 +123,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomeDevices\Enums\DeviceEnum.cs" />
-    <Compile Include="Controls\DeviceControl.cs" />
+    <Compile Include="Controls\AlarmControl.cs" />
+    <Compile Include="Controls\ConditionerControl.cs" />
+    <Compile Include="Controls\LampControl.cs" />
+    <Compile Include="Controls\MicrowaveControl.cs" />
+    <Compile Include="Controls\TVSetControl.cs" />
     <Compile Include="HomeDevices\Devices\AlarmSystem.cs" />
     <Compile Include="HomeDevices\Enums\Brightness.cs" />
     <Compile Include="HomeDevices\Devices\Device.cs" />
